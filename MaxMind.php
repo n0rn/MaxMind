@@ -9,7 +9,7 @@ class MaxMind
     public function getLocation($user_ip)
     {
 
-        //Авторизация на ресурс
+        //Authorization for the resource
         $authenticationKey = sprintf('%s:%s', self::USERID, self::LICENSEKEY);
         $authenticationKey = base64_encode($authenticationKey);
         $httpOptions = [
